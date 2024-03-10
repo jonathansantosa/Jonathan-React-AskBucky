@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ui
+  namespace: app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ui
+  template:
+    metadata:
+      labels:
+        app: ui
+    spec:
+      containers:
+        - name: ui
+          image: joshuajerome/askbucky-ui:TAG
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: "2"
+              memory: "4Gi"
+          env:
+            - name: GIT_BRANCH_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: app
+                  key: ui_branch_name
+
+      imagePullSecrets:
+        - name: dockerhub-secret

@@ -1,0 +1,39 @@
+/* ImageTextButton.css */
+.profile-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-bottom: 10px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.profile-button:hover {
+    background-color: #ffffff2e;
+}
+
+.profile-button img {
+    width: 30px; /* Adjust as necessary */
+    height: 30px; /* Adjust as necessary */
+    margin-right: 12px;
+    border-radius: 2px;
+}
+
+.profile-button span {
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.sidebar.open .profile-button span {
+    opacity: 1;
+    pointer-events: auto;
+}

@@ -1,0 +1,75 @@
+/* PluginsButton.css */
+.plugin-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 50px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+    margin-left: 13px;
+    position: relative;
+}
+
+.plugin-button:hover {
+    background-color: #ffffff;
+    color: #000;
+    transition: 0.3s;
+}
+
+.tooltip {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px); 
+    transform: translateY(-50%);
+    color: black;
+    background: white;
+    border-radius: 10px;
+    font-size: 12pt;
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: 400;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: opacity 0.4s;
+    padding: 10px;
+    border: 1px solid #E4E9F7;
+    z-index: 1;
+}
+
+.tooltip:after,
+.tooltip:before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    display: block;
+    width: 0;
+    z-index: 0;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 10px 10px 10px 0;
+}
+
+.tooltip:after {
+    border-color: transparent white;
+    border-radius: 4px;
+    left: -8px;
+}
+
+.tooltip:before {
+    border-color: transparent white;
+    border-radius: 4px;
+    left: -8px; /* Adjust for border */
+}
+
+.plugin-button:hover .tooltip {
+    opacity: 1;
+}
+
+.sidebar.open .plugin-button:hover .tooltip {
+    opacity: 0; /* Hide the tooltip */
+    pointer-events: none;
+}

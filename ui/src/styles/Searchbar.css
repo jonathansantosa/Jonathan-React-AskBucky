@@ -1,0 +1,40 @@
+/* Searchbar.css */
+.searchbar {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+  
+  .search-input {
+    width: 0;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0;
+    transition: 0.3s;
+    background-color: #671010;
+    color: white;
+    font-size: 8pt;
+  }
+  .search-input::placeholder {
+    color: white;
+  }
+  
+  .search-input.collapsed {
+    width: 00;
+    padding: 0;
+    opacity: 0;
+    margin-left: -10px;
+  }
+  
+  .search-input:not(.collapsed) {
+    width: calc(100% - 20px); /* 20px accounts for padding */
+    opacity: 1;
+  }

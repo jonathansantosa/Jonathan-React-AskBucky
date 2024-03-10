@@ -1,0 +1,25 @@
+.OceanLight {
+    background-color:hsla(229,100%,69%,1);
+    background-image:
+    radial-gradient(at 89% 9%, hsla(187,97%,48%,1) 0px, transparent 50%),
+    radial-gradient(at 96% 97%, hsla(228,100%,8%,1) 0px, transparent 50%),
+    radial-gradient(at 10% 99%, hsla(239,100%,19%,1) 0px, transparent 50%),
+    radial-gradient(at 76% 58%, hsla(237,80%,51%,1) 0px, transparent 50%),
+    radial-gradient(at 52% 56%, hsla(237,68%,53%,1) 0px, transparent 50%),
+    radial-gradient(at 59% 96%, hsla(240,78%,39%,1) 0px, transparent 50%),
+    radial-gradient(at 34% 100%, hsla(256,100%,9%,1) 0px, transparent 50%),
+    radial-gradient(at 36% 10%, hsla(202,91%,55%,1) 0px, transparent 50%);
+}
+
+.OceanDark {
+    background-color:hsla(226,100%,15%,1);
+    background-image:
+    radial-gradient(at 89% 9%, hsla(237,100%,28%,1) 0px, transparent 50%),
+    radial-gradient(at 44% 13%, hsla(240,70%,21%,1) 0px, transparent 50%),
+    radial-gradient(at 14% 14%, hsla(202,100%,17%,1) 0px, transparent 50%),
+    radial-gradient(at 96% 97%, hsla(193,71%,47%,0.42) 0px, transparent 50%),
+    radial-gradient(at 10% 99%, hsla(240,83%,61%,1) 0px, transparent 50%),
+    radial-gradient(at 76% 58%, hsla(237,100%,69%,1) 0px, transparent 50%),
+    radial-gradient(at 52% 56%, hsla(237,53%,50%,1) 0px, transparent 50%),
+    radial-gradient(at 34% 100%, hsla(184,95%,48%,0.53) 0px, transparent 50%);
+}

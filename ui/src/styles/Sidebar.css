@@ -1,0 +1,281 @@
+/* Sidebar.css */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 78px;  /* Initial minimized width */
+  width: 5%;
+  height: 100vh;
+  background-color: #7D0A0A;
+  color: #ffffff;
+  transition: 0.3s width;  /* Transition only the width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 4;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.sidebar.open {
+  min-width: 250px; /* Full width when expanded */
+  width: 15%;
+}
+
+.new-chat-button {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  width: 65%;
+  height: 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 13px;
+  margin-right: 14px;
+  margin-bottom: 20px;
+  font-family: 'Arial', serif;
+  font-weight: 400;
+  color: white;
+  font-size: larger;
+}
+.delete-chat-button {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  width: 5%;
+  position: relative;
+  top: 30px;
+  right: -135px;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 10pt;
+  font-weight: bold;
+ }
+ .rename-chat-button {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  width: 5%;
+  position: relative;
+  top: 0px;
+  right: -185px;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 10pt;
+  font-weight: bold;
+ }
+ 
+.new-chat-button img {
+  width: 30px;
+  height: 30px;
+}
+.new-chat-button.inside {
+  background: #4322227c;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 85%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 16px;
+  height: 60px;
+}
+.new-chat-button:hover {
+    background-color: #ffffff;
+    color: black;
+    transition: 0.3s;
+}
+.new-chat-button:hover .tooltip {
+  opacity: 1;
+}
+
+.tooltip {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 10px); 
+  transform: translateY(-50%);
+  color: black(0, 0, 0);
+  background: white;
+  border-radius: 10px;
+  font-size: 12pt;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 0.4s;
+  padding: 10px;
+  border: 1px solid #E4E9F7;
+  z-index: 1;
+}
+
+.tooltip:after,
+.tooltip:before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  display: block;
+  width: 0;
+  z-index: 0;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 10px 10px 10px 0;
+}
+
+.tooltip:after {
+  border-color: transparent white;
+  border-radius: 4px;
+  left: -8px;
+}
+
+.tooltip:before {
+  border-color: transparent white;
+  border-radius: 4px;
+  left: -8px; /* Adjust for border */
+}
+
+.new-chat-button:hover .tooltip {
+  opacity: 1;
+}
+
+
+.chat-button {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  width: 60%;
+  height: 35px;
+  position: relative;
+  display: flex;
+  align-items: left;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  margin-top: 10px;
+  margin-left: 13px;
+  margin-right: 13px;
+  margin-bottom: -75px;
+  font-size: 10pt;
+  font-family: 'Arial', serif;
+  font-weight: 400;
+  color: white;
+  font-size: medium;
+}
+.chat-button.inside {
+  width: 90%;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 85%;
+}
+.chat-button:hover {
+  background-color: #ffffff2e;
+}
+
+
+.sidebar.dark-mode {
+  background-color: #12101D;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.toggle-btn {
+  font-size: 25px;
+  top: 2%;
+  left: 15px;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  position: absolute;
+  transition: left 0.3s;
+}
+
+.toggle-btn.inside {
+  top: 2%;
+  left: 193px; /* Adjusted position */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  margin-top: 14px;
+  position: relative;
+  overflow-y: auto;
+  margin-top: 5%;
+}
+
+.sidebar.open .content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.bottom-buttons {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  font-size: 16pt;
+}
+
+.bottom-buttons::before {
+  content: "";  /* Mandatory for the pseudo-element to work */
+  position: absolute;
+  top: 0;  /* Position it at the top of the .bottom-buttons */
+  left: 10%;  /* Adjust as per requirement to center the line */
+  right: 10%;  /* Adjust as per requirement to center the line */
+  height: 1px;  /* Thickness of the line */
+  background-color: gray;  /* Color of the line */
+}
+
+.bottom-buttons button {
+  margin-bottom: 10px;
+  transform: translateY(50px);
+  transition: margin 0.6s, transform 0.6s;
+}
+
+.menu-top {
+  display: flex;
+  flex-direction: horizontal;
+}
+
+.sidebar.open .bottom-buttons {
+  flex-direction: row-reverse; /* Flex horizontally */
+  justify-content: center; /* Distribute the buttons evenly */
+  margin-top: 10px; /* Adjust as per your preference */
+}
+
+.sidebar.open .bottom-buttons button {
+  margin-bottom: 0;
+  margin-right: 10px; /* Space between horizontal buttons */
+  transform: translateY(0);
+  transition: 0.6s;
+}
+
+.sidebar.open .bottom-buttons button:last-child {
+  margin-right: 10px; /* No margin for the last button */
+}

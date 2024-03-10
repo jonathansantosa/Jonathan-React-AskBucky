@@ -1,0 +1,50 @@
+Frontend:
+
+    - Chat-History:
+        - Customize current chat-history so messages appear like ChatGPT UI. (We can discuss color scheme later)
+            - Allign ChatBox and ChatHistory in the same div so that they move and resize together.
+
+    - General:
+        - Adjust the css so we use VW instead of % or px while maintaining UI appearance
+        - incorporate a brightness slider
+            - have a black transparent screen occupy 100% vw, vh
+            - increases opacity as brightness decreases.
+        
+    - Important:
+        - Background highlighting of submit button is only done when text is inputed into the textbox. (right now it is done on hover)
+        - after inputing text into the chatbox, if clicked elsewhere, the chatbox should minimize.
+        - when a new message is being generated, the auto scroll should not keep scrolling to the bottom of the page
+            - this prohibits the user from scrolling up while text is generated
+            - the auto scrolling should stop at the start of the newly generated message
+        - incorporate a "sleep" timer for when a message is recieved on the frontend. If the POST request is not acknowledged
+            within reasonable time (2-3 seconds) then an "error" message should appear + the regenerate button
+        - regenerate button should always appear on the last message
+        - scrollbar within chatbox should only appear when chatbox (is outlined) is finished growing. 
+            Appears randomly rn (associated with font-height)
+        
+    - Background:
+        - Introduce live backgrounds similar to "live" wallpapers on iphone
+
+Backend:
+
+    - Chat History is a global dictionary
+        - need to associate one per user
+        - need to link users (accounts, preferences, chat history) to AWS
+
+    - Pluggins:
+        - Background Pluggin
+            - Allows users to upload their own image or CSS style for background
+            - if users upload their own image, then blur it. make necessary changes for darkmode.
+
+    - db
+        - create JSON storage for chat messages
+        
+
+
+
+
+**Test _ Daniel Kareti*
+
+Google OAuth?
+
+pandas, openai, tiktoken, bs4, html5lib

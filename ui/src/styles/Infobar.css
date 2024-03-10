@@ -1,0 +1,70 @@
+/* Infobar.css */
+
+.info-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50px;
+    background: transparent;
+    color: #343541d5;
+    z-index: 10;
+    font-size: 10pt;
+    font-family: 'Arial', serif !important;
+    font-weight: lighter;
+    transition: all 0.3s;
+    backdrop-filter: blur(40px);
+  }
+  
+  .info-bar.darkmode {
+    color: rgba(255, 255, 255, 0.593);
+    transition: all 0.3s;
+  }
+  
+  .info-item {
+    display: inline-block;
+    position: relative;
+    margin: 10px 10px;
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .info-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    border-color: #5841D9;
+    border-width: 10px;
+    background-color: #FAFAFB;
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  .info-background.darkmode {
+    background-color: #23242ca0;
+  }
+  
+  .info-text {
+    position: relative;
+    z-index: 1;
+    margin-top: 2px;
+  }
+  
+  .info-icon {
+    display: inline-block;
+    margin-left: 6px;
+    margin-top: 2px;
+    font-size: 11pt;
+  }
+
+  .info-equipped {
+    display: inline-block;
+    margin-right: 6px;
+    margin-top: 6px;
+    font-size: 6pt;
+    color: green;
+  }

@@ -1,0 +1,17 @@
+{
+    "ChatGPT UI" :
+    {
+        "Sidebar BG" : "#202123",
+        "Highlighted Chat" : "#343541",
+        "OpenAI Response BG" : "#444654",
+        "Input BG" : "#343541",
+        "Submit Button BG" : "#36C786"
+    },
+
+    "Design #1" :
+    {
+        "General BG" : "#141627",
+        "OpenAI Response BG" : "#1C1F37",
+        "Submit Button" : "#5841D9"
+    }
+}

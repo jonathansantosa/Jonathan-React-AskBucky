@@ -1,0 +1,14 @@
+Docker Commands
+
+See existing docker images: docker image ls
+
+Build Container for SERVER: docker build -t askbucky-server -f dockerfiles/server/server.dockerfile . --no-cache
+Build Container for UI: docker build -t asbucky-web -f dockerfiles/ui/ui.dockerfile . --no-cache
+
+Run docker container for SERVER: docker run -v C:\Users\joshu\dev\askbucky\server:/app -p 5000:5000 -it askbucky-server bash
+Run docker container for UI: docker run -v C:\Users\joshu\dev\askbucky\ui:/app -p 3000:3000 -it askbucky-web bash
+
+
+
+
+

@@ -1,0 +1,16 @@
+{
+    "created":"TIME OF CREATION",
+    "id":"UUID",
+    "name":"New chat",
+    "model":"gpt-3.5-turbo",
+    "history":[
+        {
+            "user_prompt":"Hello!",
+            "assistant_response":"some response"
+        },
+        {
+            "user_prompt":"Hello!",
+            "assistant_response":"some response"
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "1": {
+        "title": "Default",
+        "description": "Basic Santa Clara theme",
+        "themeId": "default",
+        "main": "#990001",
+        "accent": "#ffffff"
+    },
+    "2": {
+        "title": "Fall",
+        "description": "Theme inspired by the colors of autumn",
+        "themeId" : "fall",
+        "main": "hsla(30,100%,56%,1)",
+        "accent": "hsla(40,69%,68%,1)"
+    },
+    "3": {
+        "title": "Aurora",
+        "description": "Theme inspired by the aurora borealis",
+        "themeId" : "aurora",
+        "main": "hsla(266,88%,55%,0.41)",
+        "accent": "hsla(212,100%,76%,1)"
+    },
+    "4": {
+        "title": "Ocean",
+        "description": "Theme inspired by the ocean's depths",
+        "themeId" : "ocean",
+        "main": "hsla(239,100%,19%,1)",
+        "accent": "hsla(202,91%,55%,1)"
+    }
+    ,
+    "5": {
+        "title": "DayNight",
+        "description": "Theme inspired by the sunrise and sunset",
+        "themeId" : "daynight",
+        "main": "hsla(255,100%,27%,1)",
+        "accent": "hsla(167,100%,27%,1)"
+    },
+    "6": {
+        "title": "Leaves",
+        "description": "Theme inspired by trees and nature",
+        "themeId" : "leaves",
+        "main": "rgb(94, 45, 12)",
+        "accent": "hsla(143,89%,69%,1)"
+    }
+}

@@ -1,0 +1,17 @@
+.SCULight {
+    background-color:#7d0a0a;
+    background-image:
+    radial-gradient(at 5% 23%, rgb(174, 142, 142) 0px, transparent 50%),
+    radial-gradient(at 86% 15%, rgb(178, 50, 50) 0px, transparent 50%),
+    radial-gradient(at 83% 79%, rgba(159, 119, 32, 0.738) 0px, transparent 50%),
+    radial-gradient(at 39% 78%, rgba(250, 112, 0, 0.512) 0px, transparent 50%);
+}
+
+.SCUDark {
+    background-color:hsla(331,59%,64%,1);
+    background-image:
+    radial-gradient(at 5% 23%, hsla(240,100%,27%,1) 0px, transparent 50%),
+    radial-gradient(at 86% 15%, hsla(167,100%,27%,1) 0px, transparent 50%),
+    radial-gradient(at 83% 79%, hsla(255,100%,27%,1) 0px, transparent 50%),
+    radial-gradient(at 39% 78%, hsla(231,100%,27%,1) 0px, transparent 50%);
+}

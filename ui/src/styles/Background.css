@@ -1,0 +1,23 @@
+/* Background.css */
+.background {
+  position: relative;
+  background-size: cover;
+  height: calc(100vh);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s; /* Add transition for smooth effect */
+}
+
+.title {
+  color: #000; /* Default text color */
+  font-size: 12pt;
+  transition: color 0.3s;
+}
+
+.background.darkmode .title {
+  color: #fff;
+  transition: color 0.3s;
+}

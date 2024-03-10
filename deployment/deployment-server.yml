@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server
+  namespace: app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: server
+  template:
+    metadata:
+      labels:
+        app: server
+    spec:
+      serviceAccountName: server
+      containers:
+        - name: server
+          image: joshuajerome/askbucky-server:TAG
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+          resources:
+            requests:
+              cpu: "1"
+              memory: "4Gi"
+          env:
+            - name: GIT_BRANCH_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: app
+                  key: server_branch_name
+
+      imagePullSecrets:
+        - name: dockerhub-secret

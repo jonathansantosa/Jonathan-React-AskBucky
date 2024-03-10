@@ -1,0 +1,20 @@
+.LeavesLight {
+    background-color:#dbff99;
+    background-image:
+    radial-gradient(at 83% 81%, hsla(66,93%,66%,1) 0px, transparent 50%),
+    radial-gradient(at 58% 86%, hsla(180,87%,69%,1) 0px, transparent 50%),
+    radial-gradient(at 61% 80%, hsla(43,86%,69%,1) 0px, transparent 50%),
+    radial-gradient(at 8% 13%, hsla(66,83%,77%,1) 0px, transparent 50%),
+    radial-gradient(at 45% 17%, hsla(143,89%,69%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 15%, hsla(63,74%,78%,1) 0px, transparent 50%),
+    radial-gradient(at 87% 16%, hsla(90,77%,65%,1) 0px, transparent 50%);
+}
+
+.LeavesDark {
+    background-color:hsla(28,80%,52%,1);
+    background-image:
+    radial-gradient(at 80% 76%, hsla(18,93%,83%,1) 0px, transparent 50%),
+    radial-gradient(at 24% 21%, hsla(24,90%,76%,1) 0px, transparent 50%),
+    radial-gradient(at 18% 79%, hsla(21,68%,63%,1) 0px, transparent 50%),
+    radial-gradient(at 94% 10%, hsla(26,94%,62%,1) 0px, transparent 50%);
+}
